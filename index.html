@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Best Wallpapers">
+    <meta name="author" content="Necmettin Çimen">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Wallhaven</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i
+                                class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="index.html" method="post">
+                            <input type="search" name="top-search-bar" class="form-control"
+                                placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="./index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./about.html">- About</a></li>
+                                            <li><a href="./gallery.html">- Gallery</a></li>
+                                            <li><a href="./blog.html">- Blog</a></li>
+                                            <li><a href="./single-blog.html">- Blog Details</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./gallery.html">Gallery</a></li>
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Search Icon -->
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i
+                                        class="ti-search"></i></div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 clearfix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Projects Menu -->
+                    <div class="alime-projects-menu">
+                        <div class="portfolio-menu text-center">
+
+                            <button class="btn active" onclick="" id="btnGeneral">General</button>
+                            <button class="btn" onclick="searchPage()" id="btnAnime">Anime</button>
+                            <button class="btn" onclick="searchPage()" id="btnPeople">People</button>
+                            <button style="
+                            width: 20px;
+                            height: 20px;
+                            background-color: #fc6060;
+                            border-radius: 10px;
+                            border: 0;
+                        "></button>
+                            <button class="btn active" id="btnSfw">Sfw</button>
+                            <!-- <button class="btn" id="btnSketchy">Sketchy</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row alime-portfolio" id="piclist">
+                <!-- Single Gallery Item -->
+                <div id="picitem">
+
+                    <div class="col-12 col-sm-6 col-lg-4  mb-30 fadeInUp #category#">
+                        <img src="#thumbs.original#" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        style="margin: auto; display: block; shape-rendering: auto;" width="200px" height="200px"
+                        viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <circle cx="50" cy="50" r="0" fill="none" stroke="#a80909" stroke-width="2">
+                            <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1"
+                                keySplines="0 0.2 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                            <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0"
+                                keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                        </circle>
+                        <circle cx="50" cy="50" r="0" fill="none" stroke="#d62e2e" stroke-width="2">
+                            <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1"
+                                keySplines="0 0.2 0.8 1" calcMode="spline"></animate>
+                            <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0"
+                                keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline"></animate>
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery Area End -->
+
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+    <script src="js/api.js"></script>
+
+</body>
+
+</html>
